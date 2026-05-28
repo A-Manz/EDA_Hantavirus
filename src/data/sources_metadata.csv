@@ -1,0 +1,11 @@
+source_id,organization,url,data_type,license,reliability,last_accessed
+SRC-01,World Health Organization (WHO),https://www.who.int/health-topics/hantavirus,"Epidemiological reports, Disease Outbreak News",CC-BY-NC-SA 3.0 IGO,High,2026-05-15
+SRC-02,US CDC,https://www.cdc.gov/hantavirus/,"HPS surveillance, case counts, clinical guidance",Public Domain,High,2026-05-15
+SRC-03,PAHO,https://www.paho.org/en/topics/hantavirus,Americas regional epidemiological updates,CC-BY-NC-SA 3.0 IGO,High,2026-05-15
+SRC-04,ECDC,https://www.ecdc.europa.eu/en/hantavirus-infection,European surveillance annual reports,ECDC Copyright,High,2026-05-15
+SRC-05,PubMed / NIH,https://pubmed.ncbi.nlm.nih.gov/,"Peer-reviewed literature, clinical studies",Various,High,2026-05-15
+SRC-06,Chile Ministry of Health,https://www.minsal.cl/,National HPS surveillance bulletins,Government Open Data,High,2026-05-15
+SRC-07,Argentina Ministry of Health,https://www.argentina.gob.ar/salud,National HPS notifications and outbreak reports,Government Open Data,High,2026-05-15
+SRC-08,Robert Koch Institute (RKI),https://www.rki.de/,German hantavirus surveillance data,Government Open Data,High,2026-05-15
+SRC-09,Chinese CDC,https://www.chinacdc.cn/,HFRS national surveillance reports,Government Open Data,Medium,2026-05-15
+SRC-10,GenBank / NCBI,https://www.ncbi.nlm.nih.gov/genbank/,Genomic sequences for virus strains,Public Domain,High,2026-05-15
