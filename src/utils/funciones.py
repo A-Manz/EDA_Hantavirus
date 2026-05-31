@@ -17,7 +17,7 @@ def diagramas_barras (df, columnas, etiquetas=False, relativo=False, guardar=Fal
         ax = axes[fila][columna_grafico]
 
         if df[columna].dtype == bool:
-            frecuencias_abs = (df[columna].map({False:"False", True:"True"})).value_counts()
+            frecuencias_abs = (df[columna].map({False:"False", True:"True"})).value_counts()    # matplotlib interpreta booleanos como 1 y 0
         else:
             frecuencias_abs = df[columna].value_counts()
 
@@ -104,7 +104,7 @@ def histograma_por_categorias(df, var_cuantitativa, var_cualitativa, bins=20, ma
             data=df,
             x=var_cuantitativa,
             hue=var_cualitativa,
-            hue_order = grupo,  # Limitar a las variables en el grupo actual
+            hue_order=grupo,  # Limitar a las variables en el grupo actual
             bins=bins,
             kde=True,
             stat=estadistico,   # "density" para valores relativos
@@ -112,7 +112,7 @@ def histograma_por_categorias(df, var_cuantitativa, var_cualitativa, bins=20, ma
             alpha=0.4,
             ax=ax
         )
-        ax.set_title(f"{var_cuantitativa} según {var_cualitativa}: "f"{', '.join(map(str, grupo))}")    # map convierte elems de lista
+        ax.set_title(f"{var_cuantitativa} según {var_cualitativa}: "f"{', '.join(map(str, grupo))}")    # map convierte bools y numeros en str
         ax.set_xlabel(var_cuantitativa)
 
     if guardar: plt.savefig(f"./src/img/histograma_{var_cuantitativa}_{var_cualitativa}.png", dpi=300, bbox_inches="tight") 
